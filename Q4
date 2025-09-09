@@ -1,0 +1,34 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+int main(){
+   int array_size;
+   cout<<"Enter Array Size: ";
+   cin>>array_size;
+   vector<int> num_vect(array_size);
+   cout<<"Enter"<<array_size<<" integers:"<<endl;
+   for(int i = 0;i< array_size;++i){
+            cout<<"Enter a element: ";
+            cin>>num_vect[i];
+            }
+   int search_number;
+   cout<<"Search: ";
+   cin>> search_number;
+   bool found = false;
+   int position = 0;
+   for(int i = 0;i< array_size;++i){
+             if (num_vect[i] == search_number){
+                 found = true;
+                 position = i;
+                 break;
+      }
+      }
+   if (found){
+         cout<<"Found at: "<<position;
+         }
+   else{
+         cout<<"Not found";
+      }
+      
+   return 0;
+   }

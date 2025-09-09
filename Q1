@@ -1,0 +1,64 @@
+#include <iostream>
+#include <iostream>
+
+using namespace std;
+
+void add(int r1, int r2, int i1, int i2){
+        int r3;
+        r3 = r1+r2;
+        int i3;
+        i3 = i1+i2;
+        if(i3 > 0){
+            cout<<"Sum: ";
+            cout<<r3<<" + "<<i3<<"i"<<endl;
+         }
+        else if(i3 < 0){
+            cout<<"Sum: ";
+            cout<<r3<<" - "<<-1*i3<<"i"<<endl;
+         }
+        else{
+            cout<<"Sum: ";
+            cout<<r3;
+         }
+         }
+void subtract(int r1, int r2, int i1, int i2){
+        int r3;
+        r3 = r1-r2;
+        int i3;
+        i3 = i1-i2;
+        if(i3 > 0){
+            cout<<"Difference: ";
+            cout<<r3<<" + "<<i3<<"i"<<endl;
+         }
+        else if(i3 < 0){
+            cout<<"Difference: ";
+            cout<<r3<<" - "<<-1*i3<<"i"<<endl;
+         }
+        else{
+            cout<<"Difference: ";
+            cout<<r3<<endl;
+         }
+         }
+int main(){
+       int r1;
+       int r2;
+       int i1;
+       int i2;
+       cout<<"Enter the real part of 1st complex number: ";
+       cin>>r1;
+       cout<<endl;
+       cout<<"Enter the imaginary part of 1st complex number: ";
+       cin>>i1;
+       cout<<endl;
+       cout<<"Enter the real part of 2nd complex number: ";
+       cin>>r2;
+       cout<<endl;
+       cout<<"Enter the imaginary part of 2nd complex number: ";
+       cin>>i2;
+       cout<<endl;
+       add(r1,r2,i1,i2);
+       subtract(r1,r2,i1,i2);
+       return 0;
+       
+}
+       }
